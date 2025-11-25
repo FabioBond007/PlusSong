@@ -57,14 +57,14 @@ public class MusicaServiceMockTest {
 		assertTrue(resultado.isEmpty());
 	}
 	
-//	@Test
-//	public void deveRetornarErro() {
-//		MusicaServiceMock service = new MusicaServiceMock();
-//
-//		List<Musica> resultado = service.buscar("Nirvana");
-//
-//		assertEquals(5, resultado.size());
-//		resultado.forEach(m -> assertEquals("Michael Jackson", m.getArtista().getNome()));
-//	}
+	@Test
+	public void deveRetornarErro() {
+		MusicaServiceMock service = new MusicaServiceMock();
+
+		List<Musica> resultado = service.buscar("Nirvana");
+
+		assertEquals(5, resultado.size());
+		resultado.forEach(m -> assertEquals("Michael Jackson", m.getArtista().getNome()));
+	}
 
 }
