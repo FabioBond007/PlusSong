@@ -64,7 +64,7 @@ public class MusicaServiceMockTest {
 		List<Musica> resultado = service.buscar("Nirvana");
 
 		assertEquals(5, resultado.size());
-		resultado.forEach(m -> assertEquals("Michael Jackson", m.getArtista().getNome()));
+		resultado.forEach(m -> assertEquals("Nirvana", m.getArtista().getNome()));
 	}
 
 }
